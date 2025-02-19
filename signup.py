@@ -63,7 +63,7 @@ phone_number = f"9{random.randint(100000000, 999999999)}"  # Generate a random p
 invitation_code = "223454413643"
 
 # Find and fill phone number field
-phone_input = driver.find_element(By.NAME, "phone")
+phone_input = driver.find_element(By.XPATH, '/html/body/div/div[2]/div[4]/div/div/div[1]/div[2]/input')
 human_typing(phone_input, phone_number)
 
 # Find and fill invitation code field
